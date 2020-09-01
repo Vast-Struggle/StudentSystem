@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .span{
+            margin: 0 15px;
+        }
+        .hero{
+            display: inline-table;
+            width: 60px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            border-left: 1px solid #f0f0f0;
+        }
+        .hero:first-child{
+            border-bottom:none;
+        }
+        
+        #div2{
+            border: 1px solid #f0f0f0;
+            width: 250px;
+            margin: 20px;
+        }
+        .row{
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .row:last-child{
+            border-bottom:none;
+        }
+        .row:nth-child(2n){
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <script>
+        let total = '';
+        for(let i=1;i<=9;i++){//行
+            for(let j=1;j<=i;j++){//列
+                total += j +"*"+ i+"="+i*j+"&nbsp;&nbsp;";
+            }
+            total += "<br>"
+        }
+        div1.innerHTML = total;
+
+        let stuArr = [
+            ['宋江','卢俊义','吴用','公孙胜'],
+            ['关胜','林冲','柴进','鲁智深'],
+            ['孙二娘','扈三娘','顾大嫂','潘金莲'],
+            ['高俅','蔡京','童贯','宋徽宗'],
+        ]
+        let heroText = '';
+        for(let row = 0;row<stuArr.length;row++){
+            heroText += `<div class=row>`;
+            for(let col = 0;col<4;col++){
+                heroText += `<span class=hero>${stuArr[row][col]}</span>`;
+            }
+            heroText += `</div>`;
+        }
+        div2.innerHTML = heroText;
+    </script>
+</body>
+</html>

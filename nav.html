@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=nav, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="topcool">
+        <!-- 语义化 -->
+        <div class="topheader">
+            <a href="#" class="toplogo"></a>
+            <div  class="topnav">
+                <a href="#">首页</a>
+                <a href="#">作品</a>
+                <a href="#">经验</a>
+                <a href="#">欣赏</a>
+                <a href="#">素材</a>
+                <a href="#">招聘</a>
+                <a href="#">活动</a>
+                <span class="morenav">
+                    <a href="#">更多</a>
+                    <b></b>
+                    <ul class="nav-more-ul">
+                        <li><a href="">酷友/设计师</a></li>
+                        <li><a href="">酷友精彩评论</a></li>
+                        <li><a href="">小组</a></li>
+                        <li><a href="">酷友/设计师</a></li>
+                        <li><a href="">酷友精彩评论</a></li>
+                    </ul>
+                </span>
+            </div>
+            <div class="topheaderight">
+                <div class="login">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </div>
+                <div class="top-search">
+                    <form action="http://www.baidu.com" method="get">
+                        <input type="text" name="username" class="top-search-txt">
+                        <input type="submit" value class="top-search-btn">
+                    </form>
+                    <ul class="nav-more-ul-2">
+                        <li><input type="radio" name="type"><a href="">酷友</a></li>
+                        <li><input type="radio" name="type"><a href="">精彩</a></li>
+                        <li><input type="radio" name="type"><a href="">小组</a></li>
+                        <li><input type="radio" name="type"><a href="">设计</a></li>
+                        <li><input type="radio" name="type"><a href="">评论</a></li>
+                        <li><input type="radio" name="type"><a href="">酷友</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.morenav').hover(function(){
+                $(this).find('.nav-more-ul').show();
+                $(this).toggleClass('morenav-hover');
+            },function(){
+                $(this).find('.nav-more-ul').hide();
+                $(this).toggleClass('morenav-hover');
+            })
+             $('.top-search-txt').hover(function(){
+                 $(this).find('.nav-more-ul-2').show();
+                 $(this).toggleClass('top-search-hover');
+             },function(){
+                 $(this).find('.nav-more-ul-2').hide();
+                 $(this).toggleClass('top-search-hover');
+             })
+        })
+    </script>
+</body>
+</html>

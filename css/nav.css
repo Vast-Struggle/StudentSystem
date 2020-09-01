@@ -1,0 +1,276 @@
+@charset 'utf-8';
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font: 12px/1.6 Verdana, Helvetica, sans-serif;
+}
+
+/*雅黑：\5FAE\8F6F\96C5\9ED1  Verdana, Helvetica, sans-serif*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.layout:after {
+	content: '\20';
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.layout {
+	*zoom: 1;
+}
+
+.cf:before,
+.cf:after {
+	content: '';
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+small,
+cite,
+code,
+em,
+th,
+i,
+b {
+	font-size: 1em;
+	font-style: normal;
+	font-weight: 500;
+}
+/* reset CSS */
+
+.topcool {
+    height: 45px;
+    width: 100%;
+    background: #ffae00;
+    position: relative;
+    text-align: center;
+    z-index: 999;
+  }
+  .topheader {
+    width: 1083px;
+    height: 45px;
+    margin: 0 auto;
+  }
+  .toplogo {
+    background-image: url('../image/zcool-logo.jpg');
+    width: 124px;
+    height: 31px;
+    float: left;
+    position: relative;
+    top: 7px;
+  }
+  .topnav{
+    float: left;
+    height: 43px;
+    padding-left: 10px;
+    position: relative;
+  }
+/* .topnav>a 子代选择器，直接选择子代元素（子元素） */
+.topnav>a,
+.morenav>a {
+  height: 43px;
+  width: 50px;
+  line-height: 44px;
+  color: #000;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  font-size: 14px;
+}
+.topnav>a:hover {
+  background: #2d2d2d;
+  font-weight: bold;
+  color: #fff;
+}
+.topnav>a.checked {
+  background: #2d2d2d;
+  font-weight: bold;
+  color: #fff;
+}
+.morenav {
+    float: left;
+    height: 43px;
+    padding-right: 10px;
+}
+.morenav b {
+  position: absolute;
+  top: 21px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-style: solid dashed dashed dashed;
+  border-width: 5px 5px;
+  border-color: #8c6000 transparent transparent transparent;
+}
+.morenav:hover {
+  border-color: #8c8c8c #2d2d2d #2d2d2d;
+}
+
+.nav-more-ul {
+    width: 100px;
+    height: 170px;
+    display: none;
+    position: absolute;
+    top: 43px;
+    left: 360px;
+    background: #2d2d2d;
+    text-align: left;
+}
+.nav-more-ul li {
+  width: 100px;
+  height: 34px;
+}
+.nav-more-ul li a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  color: #ababab;
+  font-size: 12px;
+  white-space: nowrap;
+  padding-left: 15px;
+  font-weight: normal;
+}
+
+.morenav.morenav-hover {
+  background: #2d2d2d;
+  font-weight: bold;
+  color: #fff;
+}
+.morenav.morenav-hover a {
+  font-weight: bold;
+  color: #fff;
+}
+.topheadright {
+  float: right;
+}
+.login{
+    float: right;
+    height: 43px;
+}
+.login a {
+  line-height: 44px;
+  padding: 10px;
+  color: rgb(255, 215, 215);
+}
+.top-search {
+  height: 25px;
+  float: right;
+  margin: 9px 10px 0 0;
+  margin: 8px 10px 0 0;
+  position: relative;
+  border: 1px solid #ff9200;
+  background: #fff;
+}
+.top-search-txt {
+  height: 25px;
+  width: 143px;
+  line-height: 25px;
+  border: 0;
+  float: left;
+  margin-right: 5px;
+  padding: 0 0 0 5px;
+}
+.top-search-btn {
+  height: 25px;
+  width: 24px;
+  cursor: pointer;
+  background: url('../image/bs.jpg') no-repeat;
+  border: 0;
+}
+.nav-more-ul-2{
+  width:  177px;
+  height: 60px;
+  display: none;
+  position: absolute;
+  top: 25px;
+  background: #2d2d2d;
+  text-align: left;
+}
+.top-search:hover .nav-more-ul-2{
+  display: block;
+}
+.top-search:hover{
+  font-weight: bold;
+}
+.nav-more-ul-2 li{
+  float: left;
+  margin-left: 10px;
+  display: block;
+  font-size: 12px;
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-weight: normal;
+}
+.nav-more-ul-2 li a{
+  color: #ababab;
+}
